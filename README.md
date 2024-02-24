@@ -40,6 +40,18 @@ MLOPS is a set of pratices for automating all these steps
 ----● Loggings
 ----● Security and privacy issues
 
+# Deployment Patterns
+
+● Shadow model: compare model with human judgment
+----● ML system shadows the human and runs in parallel
+----● ML system is not used for any decision making process in this process
+● Canary deployment
+----● roll out(launch) to a small fraction of traffic initially i.e. 5%
+----● monitor system and ramp up traffic gradually.
+● blue Green Development
+----● Send images to both old and new model service
+----● if anything goes wrong, you will easily rollback to old model service
+
 # Setting up ENV
 
     ssh -i ~/.ssh/mlopsKeypair.pem ubuntu@54.197.195.218
