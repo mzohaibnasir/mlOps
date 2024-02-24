@@ -13,61 +13,60 @@ MLOPS is a set of pratices for automating all these steps
 # ML Project Lifecycle
 
 ● scoping
-----● Define project: what you are working on. X->Y
+●----● Define project: what you are working on. X->Y
 ● Data acquiring
-----● Define data & establish baseline
-----● Label and organize data
+●----● Define data & establish baseline
+●----● Label and organize data
 ● Train Model
-----● Select & train Model
-----● Reform error analysis
+●----● Select & train Model
+●----● Reform error analysis
 ● Deployment
-----● Deploy in production
-----● Monitor and maintain system
---------● Update data distribution
+●----● Deploy in production
+●----● Monitor and maintain system
+●--------● Update data distribution
 
 # Deployment Challenges
 
 ● Concept drift & data drift
-----● Concept drift
---------●mapping from X->Y changes i.e. price of houses goes up in inflation
-----● Data drift
---------● X changes i.e. exposure of images in test dataset changes
+●----● Concept drift
+●--------●mapping from X->Y changes i.e. price of houses goes up in inflation
+●----● Data drift
+●--------● X changes i.e. exposure of images in test dataset changes
 ● SE issues
-----● Realtime vs batch predictions? base on time
-----● Cloud vs Edge/browser
-----● Compute issues (CPU/GPU/memory)
-----● Latency / throughput(Query per second)
-----● Loggings
-----● Security and privacy issues
+●----● Realtime vs batch predictions? base on time
+●----● Cloud vs Edge/browser
+●----● Compute issues (CPU/GPU/memory)
+●----● Latency / throughput(Query per second)
+●----● Loggings
+●----● Security and privacy issues
 
 # Deployment Patterns
 
 ● Shadow mode: compare model with human judgment
-----● ML system shadows the human and runs in parallel
-----● ML system is not used for any decision making process in this process
+●----● ML system shadows the human and runs in parallel
+●----● ML system is not used for any decision making process in this process
 ● Canary deployment
-----● roll out(launch) to a small fraction of traffic initially i.e. 5%
-----● monitor system and ramp up traffic gradually.
+●----● roll out(launch) to a small fraction of traffic initially i.e. 5%
+●----● monitor system and ramp up traffic gradually.
 ● blue Green Development
-----● Send images to both old and new model service
-----● if anything goes wrong, you will easily rollback to old model service
+●----● Send images to both old and new model service
+●----● if anything goes wrong, you will easily rollback to old model service
 
 (human) -> shadow mode -> AI assistance -> partial automation -> full automation(fully AI)
 
 # Setting up ENV
 
-    ssh -i ~/.ssh/mlopsKeypair.pem ubuntu@54.197.195.218
-    # username@publicIP
+● ssh -i ~/.ssh/mlopsKeypair.pem ubuntu@54.197.195.218 # username@publicIP
 
 To automate this in /.ssh/config
 put
 
 ###############################################################"""
-Host mlops-zoomcamp
-----HostName 54.197.195.218 # need to be updated wverytime you start instance becuase its public ip
-----User ubuntu
-----IdentityFile /home/zohaib/.ssh/mlopsKeypair.pem
-----StrictHostKeyChecking no
+●Host mlops-zoomcamp
+●----HostName 54.197.195.218 # need to be updated wverytime you start instance becuase its public ip
+●----User ubuntu
+●----IdentityFile /home/zohaib/.ssh/mlopsKeypair.pem
+●----StrictHostKeyChecking no
 """################################################################
 
 Now we can just do like `ssh mlops-zoomcamp`
@@ -96,6 +95,6 @@ from an ML experiment, which includes:
 ● Metrics
 
 MLFLOW :open source platform for ML lifecycle
-----● `mlflow ui --port 8080 --backend-store-uri sqlite:///mlruns.db`
+●---● `mlflow ui --port 8080 --backend-store-uri sqlite:///mlruns.db`
 
 """
