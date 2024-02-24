@@ -42,7 +42,7 @@ MLOPS is a set of pratices for automating all these steps
 
 # Deployment Patterns
 
-● Shadow model: compare model with human judgment
+● Shadow mode: compare model with human judgment
 ----● ML system shadows the human and runs in parallel
 ----● ML system is not used for any decision making process in this process
 ● Canary deployment
@@ -51,6 +51,8 @@ MLOPS is a set of pratices for automating all these steps
 ● blue Green Development
 ----● Send images to both old and new model service
 ----● if anything goes wrong, you will easily rollback to old model service
+
+(human) -> shadow mode -> AI assistance -> partial automation -> full automation(fully AI)
 
 # Setting up ENV
 
