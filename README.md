@@ -27,3 +27,17 @@ Host mlops-zoomcamp
 """################################################################
 
 Now we can just do like `ssh mlops-zoomcamp`
+
+"""
+
+# Experiment Tracking
+
+Important concepts
+
+● ML experiment: the process of building an ML model
+● Experiment run: each trial in an ML experiment
+● Run artifact: any file that is associated with an ML run
+● Experiment metadata: information about an ML experiment like the source
+code used, the name of the user, etc.
+
+"""
