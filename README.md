@@ -13,17 +13,32 @@ MLOPS is a set of pratices for automating all these steps
 # ML Project Lifecycle
 
 ● scoping
-● Define project: what you are working on. X->Y
+----● Define project: what you are working on. X->Y
 ● Data acquiring
-● Define data & establish baseline
-● Label and organize data
+----● Define data & establish baseline
+----● Label and organize data
 ● Train Model
-● Select & train Model
-● Reform error analysis
+----● Select & train Model
+----● Reform error analysis
 ● Deployment
-● Deploy in production
-● Monitor and maintain system
-● Update data distribution
+----● Deploy in production
+----● Monitor and maintain system
+--------● Update data distribution
+
+# Deployment Challenges
+
+● Concept drift & data drift
+----● Concept drift
+--------●mapping from X->Y changes i.e. price of houses goes up in inflation
+----● Data drift
+--------● X changes i.e. exposure of images in test dataset changes
+● SE issues
+----● Realtime vs batch predictions? base on time
+----● Cloud vs Edge/browser
+----● Compute issues (CPU/GPU/memory)
+----● Latency / throughput(Query per second)
+----● Loggings
+----● Security and privacy issues
 
 # Setting up ENV
 
