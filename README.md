@@ -10,6 +10,21 @@ Different stages of ML projects:
 
 MLOPS is a set of pratices for automating all these steps
 
+# ML Project Lifecycle
+
+● scoping
+● Define project: what you are working on. X->Y
+● Data acquiring
+● Define data & establish baseline
+● Label and organize data
+● Train Model
+● Select & train Model
+● Reform error analysis
+● Deployment
+● Deploy in production
+● Monitor and maintain system
+● Update data distribution
+
 # Setting up ENV
 
     ssh -i ~/.ssh/mlopsKeypair.pem ubuntu@54.197.195.218
@@ -39,5 +54,16 @@ Important concepts
 ● Run artifact: any file that is associated with an ML run
 ● Experiment metadata: information about an ML experiment like the source
 code used, the name of the user, etc.
+
+What’s experiment tracking?
+
+Experiment tracking is the process of keeping track of all the relevant information
+from an ML experiment, which includes:
+● Source code
+● Environment
+● Data
+● Model
+● Hyperparameters
+● Metrics
 
 """
