@@ -96,5 +96,6 @@ from an ML experiment, which includes:
 ● Metrics
 
 MLFLOW :open source platform for ML lifecycle
+----● mlflow ui --port 8080 --backend-store-uri sqlite:///mlruns.db
 
 """
